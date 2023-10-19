@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <Navbar />
-      <Switch>
+      <BrowserRouter>
         <Route exact path="/" component={Home} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/projects" component={Projects} />
