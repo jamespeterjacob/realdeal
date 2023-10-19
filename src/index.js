@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Blogs from './Blogs';
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
