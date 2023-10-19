@@ -5,19 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>Where am I?</div>
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+      <h2>Typical Media Query Breakpoints</h2>
+<p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
       </header>
     </div>
   );
