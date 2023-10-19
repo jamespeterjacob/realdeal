@@ -1,7 +1,10 @@
-const { BrowserRouter, NavLink, Route, Switch } = ReactRouterDOM;
+//import ReactDOM from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
+
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = React.useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -145,4 +148,4 @@ const Hamburger = () => (
   );
   
 
-export default App;
+export default Navbar;
