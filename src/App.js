@@ -18,6 +18,14 @@ function App() {
       </header> */}
 
 
+<Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
 
 
     </div>
