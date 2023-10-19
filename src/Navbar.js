@@ -1,6 +1,7 @@
 //import ReactDOM from 'react-router-dom';
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
 
 
 const Navbar = () => {
