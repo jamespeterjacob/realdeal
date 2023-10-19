@@ -16,7 +16,7 @@ root.render(
         <Route path="/projects" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-      </Switch>
+      </BrowserRouter>
     <App />
   </React.StrictMode>
 );
