@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/realdeal/static/css/main.6c2baa23.css",
-    "main.js": "/realdeal/static/js/main.d65d1bcf.js",
+    "main.css": "/realdeal/static/css/main.ec7e8185.css",
+    "main.js": "/realdeal/static/js/main.23605a9e.js",
     "static/js/787.a5432ddb.chunk.js": "/realdeal/static/js/787.a5432ddb.chunk.js",
     "static/media/logo.svg": "/realdeal/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/realdeal/index.html",
-    "main.6c2baa23.css.map": "/realdeal/static/css/main.6c2baa23.css.map",
-    "main.d65d1bcf.js.map": "/realdeal/static/js/main.d65d1bcf.js.map",
+    "main.ec7e8185.css.map": "/realdeal/static/css/main.ec7e8185.css.map",
+    "main.23605a9e.js.map": "/realdeal/static/js/main.23605a9e.js.map",
     "787.a5432ddb.chunk.js.map": "/realdeal/static/js/787.a5432ddb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c2baa23.css",
-    "static/js/main.d65d1bcf.js"
+    "static/css/main.ec7e8185.css",
+    "static/js/main.23605a9e.js"
   ]
 }
