@@ -4,11 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar />
+   <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
     <App />
   </React.StrictMode>
 );
