@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import About from './About'
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,17 +15,14 @@ function App() {
   return (
     
     <div className="App">
-
-      {/* <header className="App-header">
-      <h2>Typical Media Query Breakpoints</h2>
-<p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
-      </header> */}
-
-
-
-
-
-    </div>
+      <div className="topnav">
+          <a className="active" href="#home">Home</a>
+            <a href="/"><Home/></a>
+              <a href="#contact">Contact</a>
+                <a href="#about" class="split">Help</a>
+                </div>
+                      <div className='main'></div>
+                      </div>
   );
 }
 

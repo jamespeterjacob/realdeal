@@ -1,105 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 body {
   margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #fcfcfc;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+main {
+  padding: 20px;
 }
 
-.navbar {
-  height: 60px;
-  background-color: #fef7e5;
-  position: relative;
+.topnav {
+  overflow: hidden;
+  background-color: darkgray;
 }
 
-.logo {
-}
-
-.menu-icon {
-  display: none;
-}
-
-.nav-elements {
-}
-
-.nav-elements ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.nav-elements ul li:not(:last-child) {
-  margin-right: 60px;
-}
-
-.nav-elements ul a {
-  font-size: 16px;
-  font-weight: 400;
-  color: #2f234f;
+.topnav a {
+  
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-.nav-elements ul a.active {
-  color: #574c4c;
-  font-weight: 500;
-  position: relative;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.nav-elements ul a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #574c4c;
-}
-
-@media (max-width: 768px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (max-width: 600px) {
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-elements {
-    position: absolute;
-    right: 0;
-    top: 60px;
-    background-color: #fef7e5;
-    width: 0px;
-    height: calc(100vh - 60px);
-    transition: all 0.3s ease-in;
-    overflow: hidden;
-  }
-
-  .nav-elements.active {
-    width: 270px;
-  }
-
-  .nav-elements ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-elements ul li {
-    margin-right: unset;
-    margin-top: 22px;
-  }
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: darkgray;
+  color: white;
 }
