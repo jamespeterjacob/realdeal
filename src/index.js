@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import Home from './Home'
 import About from './About';
 import Navbar from './Navbar';
+import Blogs from './Blogs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,8 @@ root.render(
     <App />
     <Routes>
       <Route path="/" element={<Home/>} /> 
-      <Route path="/about" element={<About/>} /> 
+      <Route path="/realdeal/#about" element={<About/>} /> 
+      <Route path="/realdeal/#blogs" element={<Blogs/>} /> 
       </Routes>
       </HashRouter>
   </React.StrictMode>
