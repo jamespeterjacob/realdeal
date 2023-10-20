@@ -21,9 +21,9 @@ function App() {
               <a href="/about"><About/></a>
                 <a href="#about" class="split">Help</a>
                 </div>
-                      {/* <div className='main'>
-
-                      </div> */}
+                      <div className='main'>
+<p>I'm in the app</p>
+                      </div>
                       </div>
   );
 }
