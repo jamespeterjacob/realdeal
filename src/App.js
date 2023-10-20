@@ -18,10 +18,12 @@ function App() {
       <div className="topnav">
           <a className="active" href="#home">Home</a>
             <a href="/"><Home/></a>
-              <a href="#contact">Contact</a>
+              <a href="/about"><About/></a>
                 <a href="#about" class="split">Help</a>
                 </div>
-                      <div className='main'></div>
+                      {/* <div className='main'>
+
+                      </div> */}
                       </div>
   );
 }
