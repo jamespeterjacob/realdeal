@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
-import About from './About'
+import About from './About';
+import Blogs from './Blogs';
 import { Link } from 'react-router-dom';
 
 
