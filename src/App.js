@@ -18,8 +18,8 @@ function App() {
       <div className="topnav">
           <a className="active" href="#home">Home</a>
             <a href="/"><Home/></a>
-              <a href="/about"><About/></a>
-                <a href="#about" class="split">Help</a>
+              <a href="/realdeal/#about"><About/></a>
+                <a href="/realdeal/#blogs" class="split"><Blogs/></a>
                 </div>
                       <div className='main'>
 <p>I'm in the app</p>
