@@ -7,12 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home'
 import About from './About';
+import Navbar from './Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
     <BrowserRouter>
+    <Navbar/>
     <App />
     <Routes>
       <Route path="/" element={<Home/>} /> 
