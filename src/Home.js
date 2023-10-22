@@ -1,12 +1,15 @@
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+
 const Home = () => {
 
     return (
-     <div> 
-      <h1>Home</h1>
-      <p>Where am i?</p>
-
-
+      
+      <div className='mainarea'>
+     <p>k clk aslkcjla sjclkajslckaj lskcjalks jclkajsclkajslckalskc k</p>
      </div>
+    
+     
       
       );
     };

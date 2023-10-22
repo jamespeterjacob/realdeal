@@ -5,7 +5,8 @@ import App from './App';
 import './App.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
-import Home from './Home'
+import Home from './Home';
+import Login from './Login';
 import About from './About';
 import Navbar from './Navbar';
 import Blogs from './Blogs';
@@ -14,15 +15,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
+   
+    {/* <Navbar/>
+  
     <HashRouter>
-    <Navbar/>
-    <App />
     <Routes>
-      <Route path="/" element={<Home/>} /> 
-      <Route path="/realdeal/#about" element={<About/>} /> 
-      <Route path="/realdeal/#blogs" element={<Blogs/>} /> 
+      
+      <Route path="/" element={<Login/>}>Test</Route>
+      <Route path="/realdeal/#about" >Test zone</Route> 
+      <Route path="/realdeal/#blogs" >Test zone</Route>
+      <Route path="/realdeal/#login" Component={Login} ></Route>  
       </Routes>
-      </HashRouter>
+      </HashRouter> */}
+      <App />
   </React.StrictMode>
 );
 
