@@ -25,7 +25,7 @@ const Appheader = () => {
         <div>
             {showmenu &&
                 <div className="topnav">
-                    <Link class="brand" to={'/'}>Ceferin</Link>
+                    <Link class="brand" to={'/home'}>Ceferin</Link>
                     <Link to={'/company'}>Companies</Link>
                     <Link to={'/user'}>Users</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
