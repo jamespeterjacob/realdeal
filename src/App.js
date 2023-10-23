@@ -19,7 +19,7 @@ function App() {
     <div className="App">
     {/* <Provider store={compstore}> */}
     {/* <ToastContainer position='top-right'></ToastContainer> */}
-    <HashRouter>
+    <BrowserRouter>
     <Appheader></Appheader>
     <Routes>
       <Route path='/realdeal/#' element={<Home/>}></Route>
@@ -29,7 +29,7 @@ function App() {
       <Route path='/component/users' element={<User></User>}></Route> */}
     </Routes>
     
-    </HashRouter>
+    </BrowserRouter>
     {/* </Provider> */}
   </div>
   );
