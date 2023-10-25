@@ -29,8 +29,8 @@ const Appheader = () => {
             <div>
                 <div className="topnav">
                     <Link className="brand" to={'/realdeal/#home'}>Ceferin</Link>
-                    <Link to={'/realdeal/#company'}>Companies</Link>
-                    <Link to={'/realdeal/#user'}>Users</Link>
+                    <Link to={'/realdeal/#blogs'}>Blogs</Link>
+                    <Link to={'/realdeal/#contact'}>Contact</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
                     
