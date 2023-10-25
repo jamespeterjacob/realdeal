@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Home from "./Home";
+import Blogs from "./Blogs";
+import Contact from "./Contact"
 
 
 const Appheader = () => {
@@ -41,6 +43,8 @@ const Appheader = () => {
                </div>
                <div className="main">
                 <Home/>
+                <Blogs/>
+                <Contact/>
                </div>
                </div>
               
