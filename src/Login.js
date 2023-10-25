@@ -95,9 +95,7 @@ sessionStorage.clear();
     }
     return (
 
-        <Box className='logincontainer' style={{}}
-        component="form" sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },}}
-        noValidate autoComplete="off">
+       
         <div className="row">
             <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
                 <form onSubmit={ProceedLogin} className="container">
@@ -123,7 +121,7 @@ sessionStorage.clear();
                 </form>
             </div>
         </div>
-        </Box>
+        
 
         
     );
