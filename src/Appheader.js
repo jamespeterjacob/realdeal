@@ -30,7 +30,10 @@ const Appheader = () => {
                     <Link to={'/realdeal/#user'}>Users</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
+                    <div>
                     <Sidebar/>
+                    </div>
+                   
                 </div>
                
                    
