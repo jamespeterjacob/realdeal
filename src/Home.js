@@ -5,7 +5,7 @@ const Home = () => {
 
     return (
       
-      <div className='main'>
+      <div>
      <p>k clk aslkcjla sjclkajslckaj lskcjalks jclkajsclkajslckalskc k</p>
      </div>
     
