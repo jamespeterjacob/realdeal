@@ -8,6 +8,7 @@ import Home from './Home';
 import About from './About';
 import Blogs from './Blogs';
 import Appheader from './Appheader';
+import Contact from './Contact';
 
 
 
@@ -25,6 +26,9 @@ function App() {
     <Routes>
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
+      <Route path='/blogs' element={<Blogs/>}></Route>
+      <Route path='/contact' element={<Contact/>}></Route>
+      {/* <Route path='/login' element={<Login/>}></Route> */}
       {/* <Route path='/register' element={<Register/>}></Route> */}
       {/* <Route path='/component/company' element={</Company>}></Route>
       <Route path='/component/users' element={<User></User>}></Route> */}
