@@ -1,7 +1,12 @@
 const Blogs = () => {
 
     return (
-     <div>Blogs</div>
+     <div>
+      <h3>Blogs</h3>
+      <p>ddsfnskdfksjndfsndfsdfs dsdfs dfsdfs df s dfs</p>
+
+     </div>
+     
       );
     };
 
