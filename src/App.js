@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
     <Appheader></Appheader>
     <Routes>
-      <Route path='/home' element={<Home/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
       {/* <Route path='/register' element={<Register/>}></Route> */}
       {/* <Route path='/component/company' element={<Company></Company>}></Route>
