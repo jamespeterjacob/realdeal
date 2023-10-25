@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import Home from "./Home";
 
 
 const Appheader = () => {
@@ -37,6 +38,9 @@ const Appheader = () => {
                 </div>
                 <div className="container">
                <Sidebar/>
+               </div>
+               <div className="main">
+                <Home/>
                </div>
                </div>
               
