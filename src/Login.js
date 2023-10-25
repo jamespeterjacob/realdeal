@@ -98,7 +98,7 @@ sessionStorage.clear();
        
         <div className="row">
             <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
-                <form onSubmit={ProceedLogin} className="container">
+                <form onSubmit={ProceedLogin} className="">
                     <div className="card">
                         <div className="card-header">
                             <h2>User Login</h2>
