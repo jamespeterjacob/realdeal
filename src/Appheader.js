@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import Home from "./Home";
 
 const Appheader = () => {
     const [displayusername, displayusernameupdate] = useState('');
@@ -26,7 +27,7 @@ const Appheader = () => {
             {showmenu &&
             <div>
                 <div className="topnav">
-                    <Link className="brand" to={'/realdeal/#home'}>Ceferin</Link>
+                    <Link className="brand" to={'/realdeal/#home'}>Ceferin <Home/></Link>
                     <Link to={'/realdeal/#company'}>Companies</Link>
                     <Link to={'/realdeal/#user'}>Users</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
