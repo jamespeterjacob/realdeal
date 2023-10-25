@@ -23,7 +23,7 @@ function App() {
     <Appheader></Appheader>
     <Routes>
       <Route path='/realdeal/#home' element={<Home/>}></Route>
-      {/* <Route path='/login' element={<Login/>}></Route> */}
+      <Route path='/realdeal/#login' element={<Login/>}></Route>
       {/* <Route path='/register' element={<Register/>}></Route> */}
       {/* <Route path='/component/company' element={<Company></Company>}></Route>
       <Route path='/component/users' element={<User></User>}></Route> */}
