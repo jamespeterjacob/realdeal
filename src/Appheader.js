@@ -25,14 +25,17 @@ const Appheader = () => {
         <div>
             {showmenu &&
                 <div className="topnav">
-                    <Link class="brand" to={'/realdeal/#home'}>Ceferin</Link>
+                    <Link className="brand" to={'/realdeal/#home'}>Ceferin</Link>
                     <Link to={'/realdeal/#company'}>Companies</Link>
                     <Link to={'/realdeal/#user'}>Users</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
+                    <Sidebar/>
                 </div>
+               
+                   
             }
-            <Sidebar/>
+         
 
         </div>
     );
