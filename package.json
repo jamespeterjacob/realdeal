@@ -1,7 +1,7 @@
 {
   "name": "realdeal",
   "version": "0.1.0",
-  "homepage": "https://jamespeterjacob.github.io/realdeal/#home",
+  "homepage": "https://jamespeterjacob.github.io/realdeal/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
