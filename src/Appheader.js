@@ -41,11 +41,7 @@ const Appheader = () => {
                 <div className="container">
                <Sidebar/>
                </div>
-               <div className="main">
-                <Home/>
-                <Blogs/>
-                <Contact/>
-               </div>
+               
                </div>
               
                    
