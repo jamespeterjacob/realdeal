@@ -94,31 +94,72 @@ sessionStorage.clear();
         return result;
     }
     return (
-        <div className="row">
-            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
-                <form onSubmit={ProceedLogin} className="container">
-                    <div className="card">
-                        <div className="card-header">
-                            <h2>User Login</h2>
-                        </div>
-                        <div className="card-body">
-                            <div className="form-group">
-                                <label>User Name <span className="errmsg">*</span></label>
-                                <input value={username} onChange={e => usernameupdate(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group">
-                                <label>Password <span className="errmsg">*</span></label>
-                                <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control"></input>
-                            </div>
-                        </div>
-                        <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Login</button> |
-                            <Link className="btn btn-success" to={'/register'}>New User</Link>
-                        </div>
-                    </div>
-                </form>
-            </div>
+        // <div className="row">
+        //     <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+        //         <form onSubmit={ProceedLogin} className="container">
+        //             <div className="card">
+        //                 <div className="card-header">
+        //                     <h2>User Login</h2>
+        //                 </div>
+        //                 <div className="card-body">
+        //                     <div className="form-group">
+        //                         <label>User Name <span className="errmsg">*</span></label>
+        //                         <input value={username} onChange={e => usernameupdate(e.target.value)} className="form-control"></input>
+        //                     </div>
+        //                     <div className="form-group">
+        //                         <label>Password <span className="errmsg">*</span></label>
+        //                         <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control"></input>
+        //                     </div>
+        //                 </div>
+        //                 <div className="card-footer">
+        //                     <button type="submit" className="btn btn-primary">Login</button> |
+        //                     <Link className="btn btn-success" to={'/register'}>New User</Link>
+        //                 </div>
+        //             </div>
+        //         </form>
+        //     </div>
+        // </div>
+
+        <Box className='logincontainer' style={{}}
+        component="form" sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },}}
+        noValidate autoComplete="off">
+          
+                  <form onSubmit={ProceedLogin} className="" >
+                      
+                      <div className="card" style={{backgroundColor:'lightgray', alignContent:'center'}}>
+                          <div className="card-header" style={{verticalAlign:'', alignContent:'center'}}>
+                              <div className="form-group" style={{alignContent:'center', padding:'20px'}}>
+                              <h2>User Login</h2>
+                              </div>
+                          </div>
+                          <div className="card-body" style={{backgroundColor:'lightgray', padding:'20px'}}>
+                          <div>
+          {/* <TextField
+            error
+            id="outlined-error"
+            label="username"
+          //   defaultValue="Hello World"
+          /> */}
         </div>
+                              <div className="form-group" >
+                                  {/* <label>User Name <span className="errmsg">*</span></label> */}
+                                  <TextField error id="outlined-error" label="username" value={username} onChange={e => usernameupdate(e.target.value)} className="" style={{minHeight:'30px'}} placeholder="Username" ></TextField>
+                              </div>
+                              <div className="form-group">
+                                  {/* <label>Password <span className="errmsg">*</span></label> */}
+                                  <TextField type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control" style={{minHeight:'30px'}} placeholder="Password"></TextField>
+                              </div>
+                          </div>
+                          <div className="card-footer" style={{padding:'20px', alignContent:'center'}}>
+                              <Button variant="contained" type="submit" className="btn btn-primary" style={{minHeight:'30px', minWidth:'80px'}}>Login</Button> 
+                              <span style={{padding:'20px'}}>
+                              <Link className="btn btn-success" to={'/register'} style={{minHeight:'30px'}}>Register</Link>
+                              </span>
+                              
+                          </div>
+                      </div>
+                  </form>
+                  </Box>
     );
 }
 
