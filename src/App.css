@@ -296,18 +296,18 @@
   
   .topnav {
     overflow: hidden;
-    background-color: darkgray;
+    background-color: #2d344e;
   }
 
   .topnav .brand {
-    color: black;
+    color: White;
     font-weight: 500;
   }
   
   .topnav a {
     
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -316,7 +316,7 @@
 
   .topnav span{
     float: right;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -327,13 +327,13 @@
   
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: lightgray;
   }
   
   /* Create a right-aligned (split) link inside the navigation bar */
   .topnav a.split {
     float: right;
-    background-color: darkgray;
+    background-color: #2d344e;
     color: white;
   }
   
@@ -345,7 +345,7 @@
     margin: 0;
     padding: 0;
     width: 20%;
-    background-color: #f1f1f1;
+    background-color: #2d344e;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -353,7 +353,7 @@
   
   .sidebar a {
     display: block;
-    color: black;
+    color: white;
     padding: 16px;
     text-decoration: none;
   }
