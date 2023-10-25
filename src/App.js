@@ -13,6 +13,7 @@ import Appheader from './Appheader';
 
 
 
+
 function App() {
 
   return (
@@ -25,7 +26,7 @@ function App() {
       <Route path='/' element={<Home/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
       {/* <Route path='/register' element={<Register/>}></Route> */}
-      {/* <Route path='/component/company' element={<Company></Company>}></Route>
+      {/* <Route path='/component/company' element={</Company>}></Route>
       <Route path='/component/users' element={<User></User>}></Route> */}
     </Routes>
     

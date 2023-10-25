@@ -32,6 +32,7 @@ const Appheader = () => {
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
                 </div>
             }
+            <Sidebar/>
 
         </div>
     );
