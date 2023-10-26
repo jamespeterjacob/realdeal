@@ -14,7 +14,9 @@ function App() {
 
   return (
     
-    <><Appheader></Appheader><Routes>
+    <>
+    {/* <Appheader></Appheader> */}
+    <Routes>
       <Route exact path='/' index element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/blogs' element={<Blogs />} />
