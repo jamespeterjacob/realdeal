@@ -15,14 +15,8 @@ function App() {
   return (
     
     <>
-    {/* <Appheader></Appheader> */}
-    <div className="topnav">
-                    <Link className="brand" to={'/'}>Ceferin</Link>
-                    <Link to={'/blogs'}>Blogs</Link>
-                    <Link to={'/contact'}>Contact</Link>
-                    <span style={{  }}>Welcome <b>{displayusername}</b></span>
-                    <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
-                </div>
+    <Appheader></Appheader>
+   
     <Routes>
       <Route exact path='/' index element={<Home />} />
       <Route path='/login' element={<Login />} />
