@@ -16,12 +16,10 @@ function App() {
     
     <>
    
-   
+   <Appheader></Appheader>
     <Routes>
-      <Route exact path='/' index element={<Home />} />
-      <div>
-      <Appheader></Appheader>
-      </div>
+      <Route default path='/' index element={<Home />} />
+     
       <Route path='/login' element={<Login />} />
       <Route path='/blogs' element={<Blogs />} />
       <Route path='/contact' element={<Contact />} />
