@@ -13,7 +13,7 @@ const Appheader = () => {
     const location = useLocation();
     useEffect(() => {
         if (location.pathname === '/login' || location.pathname === '/register') {
-            showmenuupdateupdate(true);
+            showmenuupdateupdate(false);
         } else {
             showmenuupdateupdate(true);
             let username = sessionStorage.getItem('username');
