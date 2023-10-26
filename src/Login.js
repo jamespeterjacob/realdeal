@@ -31,7 +31,7 @@ sessionStorage.clear();
                         toast.success('Success');
                         sessionStorage.setItem('username',username);
                         sessionStorage.setItem('userrole',resp.role);
-                        usenavigate('/realdeal/home')
+                        usenavigate('/');
                     }else{
                         toast.error('Please Enter valid credentials');
                     }
@@ -63,7 +63,7 @@ sessionStorage.clear();
                      toast.success('Success');
                      sessionStorage.setItem('username',username);
                      sessionStorage.setItem('jwttoken',resp.jwtToken);
-                   usenavigate('/realdeal/home')
+                   usenavigate('/');
                 }
                 // if (Object.keys(resp).length === 0) {
                 //     toast.error('Please Enter valid username');

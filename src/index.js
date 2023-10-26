@@ -4,30 +4,15 @@ import './index.css';
 import App from './App';
 import './App.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
-import Home from './Home';
-import Login from './Login';
-import About from './About';
-import Navbar from './Navbar';
-import Blogs from './Blogs';
+import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
-   
-    {/* <Navbar/>
-  
-    <HashRouter>
-    <Routes>
-      
-      <Route path="/" element={<Login/>}>Test</Route>
-      <Route path="/realdeal/#about" >Test zone</Route> 
-      <Route path="/realdeal/#blogs" >Test zone</Route>
-      <Route path="/realdeal/#login" Component={Login} ></Route>  
-      </Routes>
-      </HashRouter> */}
-      <App />
+    {/* <Navbar/> */}
+    <Router>
+    <App />
+    </Router>
   </React.StrictMode>
 );
 

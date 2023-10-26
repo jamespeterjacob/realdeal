@@ -6,7 +6,9 @@ const Home = () => {
     return (
       
       <div className="main">
-     <p>k clk aslkcjla sjclkajslckaj lskcjalks jclkajsclkajslckalskc k</p>
+      <h3>Home</h3>
+      <p>ddsfnskdfksjndfsndfsdfs dsdfs dfsdfs df s dfs</p>
+
      </div>
     
      
