@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
-import {Route, Routes} from "react-router-dom";
+import {Link, Route, Routes} from "react-router-dom";
 import Sidebar from './Sidebar';
 import Login from './Login';
 import Home from './Home';
@@ -16,6 +16,13 @@ function App() {
     
     <>
     {/* <Appheader></Appheader> */}
+    <div className="topnav">
+                    <Link className="brand" to={'/'}>Ceferin</Link>
+                    <Link to={'/blogs'}>Blogs</Link>
+                    <Link to={'/contact'}>Contact</Link>
+                    <span style={{  }}>Welcome <b>{displayusername}</b></span>
+                    <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
+                </div>
     <Routes>
       <Route exact path='/' index element={<Home />} />
       <Route path='/login' element={<Login />} />
