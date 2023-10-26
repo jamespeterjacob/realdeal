@@ -27,6 +27,7 @@ const Appheader = () => {
     }, [location])
     return (
         <div>
+            <Home/>
             {showmenu &&
             <div>
                 <div className="topnav">
