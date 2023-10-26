@@ -12,7 +12,7 @@ const Appheader = () => {
     const usenavigate = useNavigate();
     const location = useLocation();
     useEffect(() => {
-        if (location.pathname === '/login' || location.pathname === '/register') {
+        if (location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/home') {
             showmenuupdateupdate(false);
         } else {
             showmenuupdateupdate(true);
@@ -27,7 +27,7 @@ const Appheader = () => {
     }, [location])
     return (
         <div>
-            <Home/>
+            
             {showmenu &&
             <div>
                 <div className="topnav">
@@ -36,9 +36,7 @@ const Appheader = () => {
                     <Link to={'/contact'}>Contact</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
-                    
-                   
-                </div>
+                    </div>
                 <div className="container">
                <Sidebar/>
                </div>
