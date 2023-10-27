@@ -32,7 +32,7 @@ const Appheader = () => {
             <div>
                 <div className="topnav">
                     <Link className="brand" to={'/'}>Ceferin</Link>
-                    <Link to={'/blogs'}>Blogs</Link>
+                    <Link to={'/joblist'}>Jobs</Link>
                     <Link to={'/contact'}>Contact</Link>
                     <span style={{  }}>Welcome <b>{displayusername}</b></span>
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>

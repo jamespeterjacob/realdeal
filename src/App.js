@@ -1,29 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
+import { useEffect } from 'react';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducers from './reducers';
 import {Link, Route, Routes} from "react-router-dom";
 import Sidebar from './Sidebar';
 import Login from './Login';
 import Home from './Home';
 import About from './About';
-import Blogs from './Blogs';
 import Appheader from './Appheader';
 import Contact from './Contact';
+import JobList from './components/jobs/JobList';
+import { fetchJobs } from './actions/jobActions';
 
+
+const store = createStore(reducers, applyMiddleware(thunk));
 function App() {
 
+  useEffect(() => {
+    store.dispatch(fetchJobs());
+  }, []);
   return (
     
     <>
-   
+   <Provider store={store}>
    <Appheader></Appheader>
     <Routes>
-      <Route default path='/' index element={<Home />} />
-     
+      <Route exact path='/' index element={<Home />} />
+      <Route path='/joblist' element={<JobList />} />
       <Route path='/login' element={<Login />} />
-      <Route path='/blogs' element={<Blogs />} />
       <Route path='/contact' element={<Contact />} />
-    </Routes></>
+    </Routes>
+    </Provider>
+    </>
     
   );
 }
