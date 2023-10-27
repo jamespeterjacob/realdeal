@@ -83,8 +83,8 @@ const JobList = () => {
 <h2>Jobs</h2>
 {/* <button onClick={handleAddRecordClick}>Add Record</button> Add Record button */}
 {/* <Link to="/add-record">Add Record</Link> */}
-<Button variant="contained" style={{ marginBottom: '10px' }}>
-  <Link to="/add-job" style={{ textDecoration: 'none', color: 'white' }}>
+<Button onClick={handleAddJobClick} variant="contained" style={{ marginBottom: '10px' }}>
+  <Link to="/JobForm" style={{ textDecoration: 'none', color: 'white' }}>
     Add Job
   </Link>
 </Button>

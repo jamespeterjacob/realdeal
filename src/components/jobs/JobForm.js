@@ -40,7 +40,7 @@ const JobForm = () => {
       component="form" sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },}}
       noValidate autoComplete="off">
       <h2>Add Job</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <div className='container'>
         <TextField 
           type="text"
