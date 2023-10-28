@@ -16,6 +16,7 @@ import Contact from './Contact';
 import JobList from './components/jobs/JobList';
 import { fetchJobs } from './actions/jobActions';
 import JobForm from './components/jobs/JobForm';
+import EditJob from './components/jobs/EditJob';
 
 
 const store = createStore(reducers, applyMiddleware(thunk));
@@ -33,6 +34,7 @@ function App() {
       <Route exact path='/' index element={<Home />} />
       <Route path='/joblist' element={<JobList />} />
       <Route path='/jobform' element={<JobForm />} />
+      <Route path="/editjob/:id" element={<EditJob />} />
       <Route path='/login' element={<Login />} />
       <Route path='/contact' element={<Contact />} />
     </Routes>

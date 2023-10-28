@@ -36,34 +36,34 @@ const JobForm = () => {
 
   return (
     
-      <Box className='row main' style={{alignContent:'center', alignItems:'center'}}
-      component="form" sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },}}
-      noValidate autoComplete="off">
-      <h2>Add Job</h2>
-      <form onSubmit={handleSubmit} >
-        <div className='container'>
-        <TextField 
+    <Box className='row main' style={{alignContent:'center', alignItems:'center'}}
+       sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },}}
+       noValidate autoComplete="off">
+       <h2>Add Job</h2>
+       <form onSubmit={handleSubmit}>
+      <div className='container'>
+        <TextField
           type="text"
           name="title"
           placeholder="Title"
           value={job.title}
-          onChange={handleInputChange}
-        />
-        </div>
-        <div className='container'>
+          onChange={handleInputChange} />
+      </div>
+      <div className='container'>
         <TextField
           name="description"
           placeholder="Description"
           value={job.description}
-          onChange={handleInputChange}
-        />
-        </div>
-        <div className='container' >
+          onChange={handleInputChange} />
+      </div>
+      <div className='container'>
         <Button variant="contained" type="submit">Submit</Button>
-        </div>
-        
-      </form>
-      </Box>
+      </div>
+
+    </form>
+      
+      
+       </Box>
     
   );
 };

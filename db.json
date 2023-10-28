@@ -74,14 +74,19 @@
   ],
   "jobs": [
     {
-      "title": "Program Manager",
+      "title": "Program Managers",
       "description": "+10 years of creating complete cloud architectures",
       "id": 3
     },
     {
-      "title": "Full Stack Developer",
-      "description": "+5years of experience developing frocloud applicationsntend and backends for ",
+      "title": "Full Stack Developers",
+      "description": "+15years of experience developing frocloud applicationsntend and backends for ",
       "id": 4
+    },
+    {
+      "title": "test2",
+      "description": "test2",
+      "id": 6
     }
   ]
 }

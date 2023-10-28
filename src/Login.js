@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-//import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
@@ -49,7 +49,7 @@ sessionStorage.clear();
             // console.log('proceed');
             let inputobj={"username": username,
             "password": password};
-            fetch("https://my-json-server.typicode.com/jamespeterjacob/realdeal/User/Authenticate",{
+            fetch("https://my-json-server.typicode.com/jamespeterjacob/realdeal/user/Authenticate",{
                 method:'POST',
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify(inputobj)
@@ -96,10 +96,11 @@ sessionStorage.clear();
     return (
 
        
-        <div className="row">
-            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+        <Box className='row main' style={{alignContent:'center', alignItems:'center'}}
+       sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },}}
+       noValidate autoComplete="off">
                 <form onSubmit={ProceedLogin} className="">
-                    <div className="card">
+                    {/* <div className="card">
                         <div className="card-header">
                             <h2>Login</h2>
                         </div>
@@ -117,10 +118,23 @@ sessionStorage.clear();
                             <button type="submit" className="btn btn-primary">Login</button> |
                             <Link className="btn btn-success" to={'/register'}>New User</Link>
                         </div>
-                    </div>
+                    </div> */}
+                    
+                    <div className="container">
+                    <h2>Login</h2>
+                        <TextField type="text" name="username" value={username} onChange={e => usernameupdate(e.target.value)}></TextField>
+                        </div>
+                        <div>
+                        <TextField type="text" name="password" value={password} onChange={e => passwordupdate(e.target.value)}></TextField>
+                        </div>
+                        <div style={{ margin:'10px' }}>
+                        <Button variant="contained" type="submit" >Login</Button> 
+                            <Button variant="contained" style={{ margin:'20px' }}>
+                            <Link className="btn btn-success" to={'/register'} style={{ textDecoration: 'none', color: 'white' }}>Register</Link>
+                            </Button>
+                        </div>
                 </form>
-            </div>
-        </div>
+                </Box>
         
 
         

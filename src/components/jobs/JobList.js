@@ -108,10 +108,10 @@ const JobList = () => {
           {editJobId === job.id ? (
             // <EditJob job={job} onComplete={handleEditComplete} />
             // <EditJob to="/edit-job" style={{ textDecoration: 'none', color: 'black' }}></EditJob>
-            <Link to={`/edit-job/${job.id}`}>Edit</Link>
+            <Link to={`/editjob/${job.id}`}>yo</Link>
           ) : (
             <>
-              <Button variant="outlined" onClick={() => handleEditClick(job.id)}><Link to={`/edit-job/${job.id}`}>Edit</Link></Button>
+              <Button variant="outlined" onClick={() => handleEditClick(job.id)}><Link to={`/editjob/${job.id}`}>Edit</Link></Button>
               <Button variant="outlined" onClick={() => handleDeleteClick(job.id)}>Delete</Button>
             </>
           )}
