@@ -61,11 +61,11 @@ const EditJob = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Title:</label>
-          <input type="text" name="title" value={job.title} onChange={handleInputChange} />
+          <TextField type="text" name="title" value={job.title} onChange={handleInputChange} />
         </div>
         <div>
           <label>Description:</label>
-          <textarea name="description" value={job.description} onChange={handleInputChange} />
+          <TextField name="description" value={job.description} onChange={handleInputChange} />
         </div>
         <button type="submit">Save</button>
       </form>
