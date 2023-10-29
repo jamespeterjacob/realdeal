@@ -10,14 +10,15 @@ import {Link, Route, Routes} from "react-router-dom";
 import Sidebar from './Sidebar';
 import Login from './Login';
 import Home from './Home';
-import About from './About';
+import Dashboard from '../src/components/dashboard/dashboard';
 import Appheader from './Appheader';
 import Contact from './Contact';
 import JobList from './components/jobs/JobList';
 import { fetchJobs } from './actions/jobActions';
 import JobForm from './components/jobs/JobForm';
 import EditJob from './components/jobs/EditJob';
-
+import AddressForm from './AddressForm';
+import Website from './website';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 function App() {
@@ -28,15 +29,20 @@ function App() {
   return (
     
     <>
+    
    <Provider store={store}>
+   
    <Appheader></Appheader>
     <Routes>
-      <Route exact path='/' index element={<Home />} />
+      <Route path='/' index element={<Website/>}/>
+      <Route exact path='/home' element={<Home />} />
       <Route path='/joblist' element={<JobList />} />
       <Route path='/jobform' element={<JobForm />} />
       <Route path="/editjob/:id" element={<EditJob />} />
       <Route path='/login' element={<Login />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/addressform' element={<AddressForm />} />
     </Routes>
     </Provider>
     </>
